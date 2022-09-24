@@ -8,14 +8,14 @@ function calcularEnvio() {
     const autonomia = parseFloat(10); //10 kms por litro
     const combustible = parseFloat(
       prompt(
-        "Ingresa el precio del combustible en AR$ (pesos argentinos): \n nafta super : 120 aprox. \n nafta infinia : 130 aprox."
+        "Ingresa el precio del combustible en AR$ (pesos argentinos): \n nafta super : $ 120 aprox. \n nafta infinia : $ 130 aprox."
       )
     );
     let distancia = parseFloat(
       prompt("Ingresa el rádio de la distancia en kiolemtros:")
     );
     let resultado = parseFloat((distancia / autonomia) * combustible * 2, 7); // 2,7 = 1 viaje ida + 1 viaje vuelta + 0.7 margen ganancia
-    alert(`El costo del envío es de ${resultado}`);
+    alert(`El costo del envío es de $ ${resultado} pesos.`);
     return resultado;
   }
   
