@@ -80,7 +80,7 @@ function calcularEnvio() {
     saludar();
     elegir();
     confirmar = parseInt(
-      prompt("Elige tu opcion: \n 1 = Continuar \n 2 = Cancelar.")
+      prompt("Elige tu opcion: \n 1 = Continuar o Enter \n 2 = Cancelar.")
     );
   } while (confirmar != 2);
   
@@ -90,4 +90,3 @@ function calcularEnvio() {
     alert("Para volver al asistente presiona F5 o actualiza la página.");
   } else {
   }
-  
